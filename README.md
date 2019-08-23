@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [x] Explain benefit(s) using `client-side routing`?
 
-> Answer: The benefits of client-side routing are:
+> Answer: The benefits of `client-side routing` are:
 >
 > 1. Routing between views is faster since less data is processed.
 > 2. It's easier to implement smooth transitions and animations between views.
@@ -97,15 +97,15 @@ Create 3 page components to display data from 3 API endpoints:
 - `https://rickandmortyapi.com/api/location/` - [`docs`](https://rickandmortyapi.com/documentation/#get-all-locations)
 - `https://rickandmortyapi.com/api/episode/` - [`docs`](https://rickandmortyapi.com/documentation/#get-all-episodes)
 - You will need to add a EpisodeList and EpisodeCard component yourself.
-- [ ] Read the [Rick & Morty API](https://rickandmortyapi.com/documentation/) docs.
-- [ ] Create a component to show a grid of data from the API.
-  - [ ] Include `useState`, `useEffect`.
-  - [ ] Use `Axios` (or `fetch`) to make a GET request to the 3 endpoints.
+- [x] Read the [Rick & Morty API](https://rickandmortyapi.com/documentation/) docs.
+- [x] Create a component to show a grid of data from the API.
+  - [x] Include `useState`, `useEffect`.
+  - [x] Use `Axios` (or `fetch`) to make a GET request to the 3 endpoints.
   - _Example API Endpoint: `https://rickandmortyapi.com/api/character/`_
-  - [ ] Display API results using a [card](https://react.semantic-ui.com/views/card/#content-image-card) grid or [list](https://react.semantic-ui.com/elements/list/#content-icon) UI on the page.
-  - [ ] Design each 'page' layout based on the available fields. (See docs for [schema](https://rickandmortyapi.com/documentation/#character-schema) details.)
-  - [ ] Use a styling or component library for part of or all of your application. (Pick at least 1 of: [Semantic-UI](https://react.semantic-ui.com), [React Bootstrap](https://react-bootstrap.github.io/), [Material-UI](https://material-ui.com/), [styled components](https://www.styled-components.com/), [emotion](https://emotion.sh/docs/introduction)), etc.
-  - [ ] Before adding routing, 'spot' check each component manually by importing into `App.js` and adding to JSX.
+  - [x] Display API results using a [card](https://react.semantic-ui.com/views/card/#content-image-card) grid or [list](https://react.semantic-ui.com/elements/list/#content-icon) UI on the page.
+  - [x] Design each 'page' layout based on the available fields. (See docs for [schema](https://rickandmortyapi.com/documentation/#character-schema) details.)
+  - [x] Use a styling or component library for part of or all of your application. (Pick at least 1 of: [Semantic-UI](https://react.semantic-ui.com), [React Bootstrap](https://react-bootstrap.github.io/), [Material-UI](https://material-ui.com/), [styled components](https://www.styled-components.com/), [emotion](https://emotion.sh/docs/introduction)), etc.
+  - [x] Before adding routing, 'spot' check each component manually by importing into `App.js` and adding to JSX.
 
 > 💡**Reminder:** `git commit -am 'Card UI Loading Data Successfully'`
 

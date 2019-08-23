@@ -30,7 +30,7 @@ export default function EpisodeList() {
         prevPage={prevPage}
         nextPage={nextPage}
       />
-      <div className="grid-view">
+      <div className='grid-view'>
         {episodes.map(episode => {
           return <EpisodeCard key={episode.id} episode={episode} />;
         })}

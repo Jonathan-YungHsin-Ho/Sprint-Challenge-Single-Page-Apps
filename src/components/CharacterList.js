@@ -60,7 +60,7 @@ export default function CharacterList() {
         prevPage={prevPage}
         nextPage={nextPage}
       />
-      <div className="character-list grid-view">
+      <div className='character-list grid-view'>
         {characters.map(character => {
           return <CharacterCard key={character.id} character={character}
          />;

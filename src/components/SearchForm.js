@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import CharacterCard from './CharacterCard';
 
@@ -29,21 +29,21 @@ export default function SearchForm() {
   }
 
   return (
-    <section className="search-form ui bottom attached segment active">
+    <section className='search-form ui bottom attached segment active'>
       <form onSubmit={onSearch}>
         <div className='ui action input'>
           <input
             onChange={handleInputChange}
-            placeholder="name"
+            placeholder='name'
             value={name}
-            name="name"
+            name='name'
           />
-          <button type="submit" className='ui icon button'>
-            <i className="search icon" />
+          <button type='submit' className='ui icon button'>
+            <i className='search icon' />
           </button>
         </div>
       </form>
-      <div className="grid-view">
+      <div className='grid-view'>
         {data.map(character => {
           return <CharacterCard key={character.id} character={character} />;
         })}

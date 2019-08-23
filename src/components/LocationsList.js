@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import PageNav from './PageNav';
 import LocationCard from './LocationCard';
@@ -30,7 +30,7 @@ export default function LocationsList() {
         prevPage={prevPage}
         nextPage={nextPage}
       />
-      <div className="grid-view">
+      <div className='grid-view'>
         {locations.map(location => {
           return <LocationCard key={location.id} location={location} />;
         })}

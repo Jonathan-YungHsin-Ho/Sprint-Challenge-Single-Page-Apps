@@ -26,7 +26,7 @@ export default function TabNav() {
       </NavLink>
       <NavLink to='/search' className='item'>
         <Icon name='search' />
-        Search
+        Character Search
       </NavLink>
     </div>
   )

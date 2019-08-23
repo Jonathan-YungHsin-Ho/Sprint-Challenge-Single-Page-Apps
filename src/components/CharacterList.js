@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-// import { Pagination } from 'semantic-ui-react';
-import PageNav from './PageNav';
+import { Pagination } from 'semantic-ui-react';
 import CharacterCard from './CharacterCard';
 
 export default function CharacterList() {
@@ -9,15 +8,6 @@ export default function CharacterList() {
   const [characters, setCharacters] = useState([]);
   const [page, setPage] = useState(1);
   const [pageCount, setPageCount] = useState();
-  // const [pageState, setPageState] = useState({
-  //   activePage: 1,
-  //   // boundaryRange: 1,
-  //   // siblingRange: 1,
-  //   // showEllipsis: false,
-  //   // showFirstAndLastNav: true,
-  //   // showPreviousAndNextNav: true,
-  //   totalPages: '',
-  // });
 
   useEffect(() => {
     // TODO: Add API Request here - must run in `useEffect`
@@ -32,33 +22,19 @@ export default function CharacterList() {
       .catch(err => console.log(err));
   }, [page]);
 
-  const prevPage = () => setPage(page - 1);
-  const nextPage = () => setPage(page + 1);
-
-  // const handlePaginationChange = (e, { activePage }) => {
-  //   console.log(pageState.activePage)
-  //   setPageState({ activePage });
-  // };
+  const handlePaginationChange = (e, { activePage }) => {
+    setPage(activePage);
+  };
 
   return (
     <section className='ui bottom attached segment active'>
-      {/* <Pagination
-        activePage={pageState.activePage}
-        boundaryRange={pageState.boundaryRange}
-        siblingRange={pageState.siblingRange}
+      <Pagination
+        activePage={page}
+        boundaryRange={0}
+        siblingRange={1}
         onPageChange={handlePaginationChange}
-        totalPages={pageState.pageCount}
-        ellipsisItem={pageState.showEllipsis ? undefined: null}
-        firstItem={pageState.showFirstAndLastNav ? undefined : null}
-        lastItem={pageState.showFirstAndLastNav ? undefined : null}
-        prevItem={pageState.showPreviousAndNextNav ? undefined : null}
-        nextItem={pageState.showPreviousAndNextNav ? undefined : null}
-      />     */}
-      <PageNav
-        page={page}
-        pageCount={pageCount}
-        prevPage={prevPage}
-        nextPage={nextPage}
+        totalPages={pageCount}
+        ellipsisItem={null}
       />
       <div className='character-list grid-view'>
         {characters.map(character => {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import PageNav from './PageNav';
+import { Pagination } from 'semantic-ui-react';
 import LocationCard from './LocationCard';
 
 export default function LocationsList() {
@@ -19,16 +19,23 @@ export default function LocationsList() {
       .catch(err => console.log(err));
   }, [page]);
 
-  const prevPage = () => setPage(page - 1);
-  const nextPage = () => setPage(page + 1);
+  const handlePaginationChange = (e, { activePage }) => {
+    setPage(activePage);
+  };
 
   return (
     <section className='ui bottom attached segment active'>
-      <PageNav
-        page={page}
-        pageCount={pageCount}
-        prevPage={prevPage}
-        nextPage={nextPage}
+      <Pagination
+        activePage={page}
+        boundaryRange={0}
+        siblingRange={3}
+        onPageChange={handlePaginationChange}
+        totalPages={pageCount}
+        ellipsisItem={null}
+        firstItem={null}
+        lastItem={null}
+        prevItem={null}
+        nextItem={null}
       />
       <div className='grid-view'>
         {locations.map(location => {

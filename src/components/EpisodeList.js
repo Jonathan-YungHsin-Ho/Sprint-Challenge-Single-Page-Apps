@@ -17,7 +17,7 @@ export default function EpisodeList() {
   }, []);
 
   return (
-    <section className='grid-view'>
+    <section className="grid-view ui bottom attached segment active">
       {episodes.map(episode => {
         return <EpisodeCard key={episode.id} episode={episode} />;
       })}

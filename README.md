@@ -115,10 +115,10 @@ Add a Router to this application using [React Router](https://reacttraining.com/
 
 > **Tip:** Review the [examples on the React Router site.](https://reacttraining.com/react-router/web/guides/quick-start)
 
-- [ ] Declare your routes with `<Route>` components (for each component created above.)
-  - [ ] Include `/character`, `/location` and `/episode` routes.
-- [ ] In your `App` component, add a navigation menu, [tab bar](https://react.semantic-ui.com/modules/tab/#types-basic), or similar. (Hint: Make sure to use React Routers `NavLink` to link to your different pages.)
-- [ ] If you have any `<a>` tags, replace them with `<Link>` or `<NavLink>` components.
+- [x] Declare your routes with `<Route>` components (for each component created above.)
+  - [x] Include `/character`, `/location` and `/episode` routes.
+- [x] In your `App` component, add a navigation menu, [tab bar](https://react.semantic-ui.com/modules/tab/#types-basic), or similar. (Hint: Make sure to use React Routers `NavLink` to link to your different pages.)
+- [x] If you have any `<a>` tags, replace them with `<Link>` or `<NavLink>` components.
 
 - [ ] **Make sure all tasks are complete:** Do a global search (Cmd-Shift-F in VS Code) for the string `TODO:`.
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Image, Icon } from 'semantic-ui-react';
+import { NavLink } from 'react-router-dom';
 
 export default function CharacterCard({ character }) {
   return (
@@ -16,8 +17,10 @@ export default function CharacterCard({ character }) {
         </Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <Icon name='video' />
-          {character.episode.length} Episodes
+          <NavLink to='/episode'>
+            <Icon name='video' />
+            {character.episode.length} Episodes
+          </NavLink>
       </Card.Content>
     </Card>
   )

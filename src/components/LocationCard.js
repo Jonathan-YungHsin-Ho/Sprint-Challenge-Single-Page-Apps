@@ -14,5 +14,3 @@ export default function LocationCard({ location }) {
     </Card>
   );
 }
-
-// name type dimension residents

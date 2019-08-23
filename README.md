@@ -38,7 +38,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [x] What are `controlled components` in React?
 
-> Answer: `Controlled components` in React are input form elements (like <input>, <textarea>, and <select> whose values are controlled by the React state as the "single source of truth."
+> Answer: `Controlled components` in React are input form elements (like `<input>`, `<textarea>`, and `<select>` whose values are controlled by the React state as the "single source of truth."
 
 ## Project Set Up
 

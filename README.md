@@ -138,11 +138,11 @@ Start with the most _familiar (or fun) sounding_ stretch goal.
 Complete search component to your list views.
 
 - [x] Add the `<SearchForm />` component (see `./components/SearchForm.js`).
-- [ ] Wire up the `onSearch(name)` callback prop to support [querying the API](https://rickandmortyapi.com/documentation/#filter-characters). (To search for `rick`, you would request `/api/character/?name=rick`.)
-- [ ] _Remember:_ `useEffect` must reference any state on which it _depends_.
+- [x] Wire up the `onSearch(name)` callback prop to support [querying the API](https://rickandmortyapi.com/documentation/#filter-characters). (To search for `rick`, you would request `/api/character/?name=rick`.)
+- [x] _Remember:_ `useEffect` must reference any state on which it _depends_.
 
 * [ ] Animate page transition and/or card loading.
-* [ ] Persist search form field(s) by using the custom hook `useLocalStorage`.
+* [x] Persist search form field(s) by using the custom hook `useLocalStorage`.
 * [ ] Add error handling for all async (axios/AJAX) calls. (Including some styled UI.)
 * [ ] Add a "details view" and route to show more details for each type of record. (Hint: Look into route parameters or nested routes.)
   - [ ] Similar to the "details view" now with a UI twist: use a [modal](https://react.semantic-ui.com/modules/modal/#variations-size) component to show item view. (If you can, build [modal with routes](https://codesandbox.io/s/react-router-modal-gallery-classes-example-z98l5).)

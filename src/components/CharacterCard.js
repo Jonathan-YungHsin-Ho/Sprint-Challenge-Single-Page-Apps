@@ -19,7 +19,7 @@ export default function CharacterCard({ character }) {
       <Card.Content extra>
           <NavLink to='/episode'>
             <Icon name='video' />
-            {character.episode.length} Episodes
+            {character.episode.length} Episode{character.episode.length > 1 && 's'}
           </NavLink>
       </Card.Content>
     </Card>

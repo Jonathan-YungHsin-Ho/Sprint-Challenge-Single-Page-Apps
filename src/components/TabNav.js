@@ -24,6 +24,10 @@ export default function TabNav() {
         <Icon name='video' />
         Episodes
       </NavLink>
+      <NavLink to='/search' className='item'>
+        <Icon name='search' />
+        Search
+      </NavLink>
     </div>
   )
 };

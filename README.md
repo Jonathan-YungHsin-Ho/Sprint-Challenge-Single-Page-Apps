@@ -120,7 +120,7 @@ Add a Router to this application using [React Router](https://reacttraining.com/
 - [x] In your `App` component, add a navigation menu, [tab bar](https://react.semantic-ui.com/modules/tab/#types-basic), or similar. (Hint: Make sure to use React Routers `NavLink` to link to your different pages.)
 - [x] If you have any `<a>` tags, replace them with `<Link>` or `<NavLink>` components.
 
-- [ ] **Make sure all tasks are complete:** Do a global search (Cmd-Shift-F in VS Code) for the string `TODO:`.
+- [x] **Make sure all tasks are complete:** Do a global search (Cmd-Shift-F in VS Code) for the string `TODO:`.
 
 > 💡**Reminder:** `git commit -am 'MVP Completed'`
 
@@ -137,7 +137,7 @@ _Note:_ The most difficult stretch goal(s) could take an expert an hour or more.
 Start with the most _familiar (or fun) sounding_ stretch goal.
 Complete search component to your list views.
 
-- [ ] Add the `<SearchForm />` component (see `./components/SearchForm.js`).
+- [x] Add the `<SearchForm />` component (see `./components/SearchForm.js`).
 - [ ] Wire up the `onSearch(name)` callback prop to support [querying the API](https://rickandmortyapi.com/documentation/#filter-characters). (To search for `rick`, you would request `/api/character/?name=rick`.)
 - [ ] _Remember:_ `useEffect` must reference any state on which it _depends_.
 

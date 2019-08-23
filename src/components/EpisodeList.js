@@ -1,26 +1,40 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import PageNav from './PageNav';
 import EpisodeCard from './EpisodeCard';
-import LocationsList from './LocationsList';
 
 export default function EpisodeList() {
   const [episodes, setEpisodes] = useState([]);
+  const [page, setPage] = useState(1);
+  const [pageCount, setPageCount] = useState();
 
   useEffect(() => {
     axios
-      .get(`https://rickandmortyapi.com/api/episode/`)
+      .get(`https://rickandmortyapi.com/api/episode/?page=${page}`)
       .then(res => {
         // console.log(res.data.results);
         setEpisodes(res.data.results);
+        setPageCount(res.data.info.pages);
       })
       .catch(err => console.log(err));
-  }, []);
+  }, [page]);
+
+  const prevPage = () => setPage(page - 1);
+  const nextPage = () => setPage(page + 1);
 
   return (
-    <section className="grid-view ui bottom attached segment active">
-      {episodes.map(episode => {
-        return <EpisodeCard key={episode.id} episode={episode} />;
-      })}
+    <section className='ui bottom attached segment active'>
+      <PageNav
+        page={page}
+        pageCount={pageCount}
+        prevPage={prevPage}
+        nextPage={nextPage}
+      />
+      <div className="grid-view">
+        {episodes.map(episode => {
+          return <EpisodeCard key={episode.id} episode={episode} />;
+        })}
+      </div>
     </section>
   )
 }
